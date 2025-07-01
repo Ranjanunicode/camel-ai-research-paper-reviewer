@@ -1,0 +1,5 @@
+camel-ai 
+PyMuPDF
+requests 
+python-dotenv
+gradio
