@@ -1,4 +1,4 @@
-from camel.agents import RolePlaying
+from camel.agents import RoleAssignmentAgent
 from agents.reviewer_agent import get_reviewer_agent
 from agents.citation_agent import get_citation_verifier_agent
 from agents.methodology_agent import get_methodology_agent
@@ -25,7 +25,7 @@ def main():
 
     # Step 3: RolePlaying society for collaboration
     agents = [reviewer, citation_verifier, methodology, feedback]
-    roleplay = RolePlaying(
+    roleplay = RoleAssignmentAgent(
         agents=agents,
         task_prompt="You are a team of AI reviewers. Analyze this paper and provide a comprehensive review."
     )
